@@ -30,7 +30,7 @@ body {
 }
 
 main {
-  background: url(/assets/img/bg.svg) no-repeat center/cover;
+  background: url(assets/img/bg.svg) no-repeat center/cover;
   width: 100vw;
   min-height: 600px;
 }
