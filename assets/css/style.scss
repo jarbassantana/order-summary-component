@@ -40,9 +40,10 @@ body {
 
 main {
     background: url(../img/bg.svg);
-    background-position: center;
+
+    background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100vw;
     min-height: 437px;
 }
