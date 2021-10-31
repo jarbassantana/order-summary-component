@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;1,900&display=swap');
-
 :root {
     // =======================================  Colors ============================================
 
@@ -13,8 +11,6 @@
     --neutral-very-pale-blue: hsl(225, 100%, 98%);
     --neutral-desatured-blue: hsl(224, 23%, 55%);
     --neutral-dark-blue: hsl(223, 47%, 23%);
-
-    --body-font: 'Red Hat Display', sans-serif;
 
     // =============================== Font Weight ==============================
 
@@ -36,6 +32,148 @@ html {
 
 body {
     font-size: 1.6rem;
-    background: #e0e8ff;
-    font-family: var(--body-font);
+    background: var(--primary-pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    background: url(/assets/img/bg.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 600px;
+}
+
+.container {
+    max-width: 450px;
+    margin: auto;
+    padding-top: 102px;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-bottom: 7.1rem;
+}
+
+.content {
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    img {
+        border-radius: 20px 20px 0 0;
+        max-width: 450px;
+        width: 100%;
+    }
+    border-radius: 20px;
+    background-color: #fff;
+    padding-bottom: 4.8rem;
+}
+
+.info-card {
+    margin-top: 4.5rem;
+    margin-bottom: 3.2rem;
+    padding: 0 4.8rem;
+    h1 {
+        color: var(--neutral-dark-blue);
+        font-size: 2.8rem;
+        font-weight: var(--font-black);
+        text-align: center;
+        line-height: 3.8rem;
+    }
+    p {
+        text-align: center;
+        color: var(--neutral-desatured-blue);
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.card-preco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--neutral-very-pale-blue);
+    padding: 2.5rem 2.4rem;
+    border-radius: 11px;
+    max-width: 354px;
+    p {
+        margin: 0;
+    }
+    a {
+        color: var(--primary-bright-blue);
+        font-size: 1.4rem;
+        font-weight: var(--font-bold);
+    }
+}
+
+.periodo {
+    display: flex;
+    gap: 2rem;
+}
+
+.plano-periodo {
+    font-size: 1.6rem;
+    font-weight: var(--font-black);
+    color: var(--neutral-dark-blue) !important;
+}
+.plano-preco {
+    font-size: 1.6rem;
+    font-weight: var(--font-medium);
+    color: var(--neutral-desatured-blue) !important;
+}
+
+.botao-container {
+    padding: 0 4.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.botao-primario {
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-bright-blue);
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    border-radius: 11px;
+    box-shadow: 0px 40px 40px -10px rgba(13, 48, 189, 0.151826);
+}
+
+.botao-cancelar {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--neutral-desatured-blue);
+    font-weight: var(--font-black);
+}
+
+// Media querie
+
+@media screen and (max-width: 375px) {
+    .info-card {
+        padding: 0 2.4rem;
+        h1 {
+            font-size: 2.2rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    .plano-periodo {
+        font-size: 1.4rem;
+        font-weight: var(--font-black);
+        color: var(--neutral-dark-blue) !important;
+    }
+    .plano-preco {
+        font-size: 1.4rem;
+        font-weight: var(--font-medium);
+        color: var(--neutral-desatured-blue) !important;
+    }
+    .botao-container {
+        padding: 0 2.4rem;
+    }
 }
